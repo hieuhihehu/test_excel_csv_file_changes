@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: echo 'Hello tui bay'
       - run: touch hehe.txt
+      - run: cat something.txt
