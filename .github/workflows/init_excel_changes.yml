@@ -1,11 +1,20 @@
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+on:
+  workflow_dispatch:
+
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
       - run: echo 'Hello tui bay'
       - run: pwd
-      - run: python new_file.py
+      - name: run python
+        run: python new_file.py
