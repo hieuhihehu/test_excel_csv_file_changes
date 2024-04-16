@@ -5,6 +5,8 @@ on:
 
 jobs:
   check-bats-version:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
