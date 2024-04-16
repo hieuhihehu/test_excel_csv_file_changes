@@ -10,7 +10,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      
+      - uses: actions/checkout@v4
       - name: setup python
         uses: actions/setup-python@v4
         with:
