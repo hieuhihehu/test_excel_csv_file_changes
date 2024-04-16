@@ -5,6 +5,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: echo 'Hello tui bay'
       - run: pwd
-      - run: cat ./something.txt
+      - run: python new_file.py
