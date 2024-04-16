@@ -18,3 +18,7 @@ jobs:
       - run: pwd
       - name: run python
         run: python new_file.py
+      - run: git add .
+      - run: git commit -m "ua la sao"
+      - run: git push
+        
